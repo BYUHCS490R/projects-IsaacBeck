@@ -1,0 +1,12 @@
+p {
+    color: blue;
+    font-size: 24pt;
+}
+
+header h1 {
+    color: rgb(48, 40, 117, 0.529);
+}
+
+main h1 {
+    color: crimson;
+}
