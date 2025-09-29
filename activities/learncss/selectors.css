@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    color: cadetblue;
+}
+
+footer p {
+    color: aquamarine;
+}
+
+#lorem1 {
+    color: rgb(1652, 80, 50, 0.8);
+}
+
+.crimson {
+    color: crimson;
+}
+
+.bigger {
+    font-size: 15pt;
+}
+
+.flashier {
+    color: cornflower;
+    font-size: 14pt;
+}
+
+.highlight {
+    font-style: italic;
+}
+
+.standout {
+    font-weight: 200;
+}
