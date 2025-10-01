@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background-color: pink;
+    font-size: 14px;
+}
+
+p {
+    color: magenta;
+    font-size: 24pt;
+}
+
+h1 {
+    color: crimson;
+}
+
+#title {
+    color: crimson;
+}
+
+h2 {
+    color: crimson;
+}
+
+h3 {
+    color: crimson;
+}
+
+.color-1 {
+    color: crimson;
+}
+
+.color-2 {
+    color: rgb(164, 43, 164);
+}
+
+.color-3 {
+    color: magenta;
+}
+
+dl {
+    color: crimson;
+}
+
+dd {
+    color: rgb(164, 43, 164);
+}
