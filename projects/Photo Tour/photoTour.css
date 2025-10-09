@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+    background-image: url('pudongShanghaiImage.jpg');
+
+}
+
+nav a {
+    color: rgb(27, 164, 179);
+}
+
+.current {
+    color: black;
+    text-decoration: none;
+}
+
+.mylist {
+    list-style-type: circle;
+    list-style-image: url(flagDot.png);
+
+}
+
+.homestyle {
+    background-color: aqua;
+}
+
+main {
+    background-image: url('shanghaiImageDecoration.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 12em;
+}
