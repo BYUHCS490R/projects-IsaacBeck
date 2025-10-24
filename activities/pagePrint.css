@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+main h2 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+}
+
+header {
+    background-color: rgb(3, 3, 157);
+    color: white
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: blue;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.main-row {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.sidebar h3 {
+    margin: 0;
+}
+
+.card {
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(200,200,200,0.8);
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+}
