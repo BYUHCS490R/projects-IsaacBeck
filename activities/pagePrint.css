@@ -65,3 +65,21 @@ nav a:hover {
 .card img {
     width: 100%;
 }
+
+@media ONLY screen AND (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+    .main-row {
+        flex-direction: column-reverse;
+    }
+    .card {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .main-card {
+        order: -1;
+    }
+}
