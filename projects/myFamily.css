@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+main {
+    width: 70%;
+}
+
+main h2 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+}
+
+header {
+    background-color: rgb(3, 3, 157);
+    color: white
+}
+
+header h1 {
+    margin: 0px;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: blue;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.main-row {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sidebar {
+    width: 30%;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(200,200,200,0.8);
+    margin: 10px;
+}
+
+.sidebar img {
+    width: 100%;
+}
+.sidebar figure {
+    margin: 10px;
+}
+
+.sidebar h3 {
+    margin: 10px;
+}
+
+.card {
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(200,200,200,0.8);
+    margin: 10px;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+@media ONLY screen AND (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+    .main-row {
+        flex-direction: column-reverse;
+    }
+    main {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .sidebar {
+        width: 96%;
+    }
+    .main-card {
+        order: -1;
+    }
+}
