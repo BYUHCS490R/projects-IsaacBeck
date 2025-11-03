@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
-    <link rel="stylesheet" href="myFamily.css" media="screen">
+    <link rel="stylesheet" href="tables.css" media="screen">
 </head>
 <body>
     <header>
@@ -13,8 +13,9 @@
     <div class="main-row">
         <main>
             <h1>Tables</h1>
-            <table border="1">
-                <thread>
+            <table class="schedule">
+                <caption>My Class Schedule</caption>
+                <thead>
                     <tr>
                         <th>Department</th>
                         <th>Number</th>
@@ -26,17 +27,17 @@
                     <tr>
                         <th colspan="6">Fall 2025</th>
                     </tr>
-                </thread>
-                <body>
+                </thead>
+                <tbody>
                     <tr>
                         <td>CS</td>
-                        <td rowspan="2">140</td>
+                        <td rowspan="2" class="num">140</td>
                         <td>Web Design</td>
                         <td>11 AM MWF</td>
                         <td>P3</td>
                         <td>3</td>
                     </tr>
-                    <tr>
+                    <tr class="grayish">
                         <td>CS</td>
                         <td>Web Design</td>
                         <td>12 AM MWF</td>
@@ -46,12 +47,12 @@
                     <tr>
                         <td>CS</td>
                         <td>415</td>
-                        <td>Operating System</td>
+                        <td>Operating Systems</td>
                         <td>2 PM MWF</td>
                         <td>P2</td>
                         <td>3</td>
                     </tr>
-                    <tr>
+                    <tr class="grayish">
                         <td>CS</td>
                         <td>401</td>
                         <td>Web Applications</td>
@@ -59,17 +60,19 @@
                         <td>P2</td>
                         <td>3</td>
                     </tr>
-                </body>
-                <footer>
+                </tbody>
+                <tfoot>
                     <tr>
                         <th colspan="5". id="total-credits">Total Credits</th>
                         <td header="total-credits">12</td>
                     </tr>
-                </footer>
+                </tfoot>
             </table>
             <p>You use a table is when you have data to present that you can put into rows and columns.</p>
             <p>You do not use a table when you lay out elements on your page.</p>
             <p>You need to do extra work for table accessibility when your label is on the top.</p>
+            <p>We don't use the border attribute because it's been taken out of HTML.</p>
+            <p>The easiest way to color every other row a different color is to use :nth-child(odd).</p>
         </main>
     </div>
     <footer>
