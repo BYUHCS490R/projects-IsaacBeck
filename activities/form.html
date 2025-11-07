@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" media="screen">
+</head>
+<body>
+    <header>
+        <h1>Isaac's Web Design Site</h1>
+    </header>
+     <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="get">
+            <div>
+                <label for="full-name">Full Name:</label>
+                <input type="text" name="fname" id="full-name" placeholder="Full name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="lname" id="email" value="your@email.com">
+             </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank">---</option>
+                    <option value="CA">California</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="agree">I agree to the terms.
+                </label>
+            </div>
+            <div>
+                Gender:
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>The form tag has an "action" attribute which specifies where to send the form data when a form is submitted.</p>
+        <p>The form tag has a "method" attribute which does POST or GET.</p>
+        <p>The difference between a "POST" and a "GET" is that GET has the data in the URL, while POST does not. POST is changing (adding, updating, or deleting) data, while GET is reading.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Isaac Beck</p>
+    </footer>
+</body>
+</html>
