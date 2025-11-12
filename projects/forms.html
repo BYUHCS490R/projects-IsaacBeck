@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="forms.css" media="screen">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Form Sign Up</legend>
+            <form action="forms.html">
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="form-row">
+                    <label for="color">Color:</label>
+                    <input type="color" name="color" id="color">
+                </div>
+                <div class="form-row">
+                    <label for="number">Age:</label>
+                    <input type="number" name="age" id="number" min="18" max="130">
+                </div>
+                <div class="form-row">
+                    <label for="range">Range:</label>
+                    <input type="range" name="range" id="range">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree">I agree to the terms.</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="state">School:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="BYU" selected>BYU Provo</option>
+                        <option value="BYUI">BYU Idaho</option>
+                        <option value="BYUH">BYU Hawaii</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+            
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; 2025 Isaac Beck</p>
+    </footer>
+</body>
+</html>
