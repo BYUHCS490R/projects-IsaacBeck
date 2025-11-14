@@ -13,7 +13,11 @@
     <main>
         <fieldset>
             <legend>Form Sign Up</legend>
-            <form action="forms.html">
+            <form action="forms.html" method="get" id="myForm">
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
                 <div class="form-row">
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email">
@@ -65,11 +69,42 @@
                     <input type="submit" value="Sign Up">
                 </div>
             </form>
-            
         </fieldset>
+        <p>Javascript is a programming language, it gots its name because a marketing team named it after Java.</p>
+        <p>The two ways you can run Javascript are in a browser (with html), and using node.js.</p>
+        <p>The most popular front-end js library was jQuery.</p>
+        <p>The most popular front-end js library today is React.</p>
     </main>
     <footer>
         <p>&copy; 2025 Isaac Beck</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('number').value;
+            
+            if (!fullname || !email) {
+                alert("You need a name and email");
+                return;
+            }
+            if (!age || age <18) {
+                alert("You need to be 18");
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+            alert("Form Submitted");
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>
