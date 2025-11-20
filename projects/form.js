@@ -45,6 +45,6 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
 			alert("Error Submitting form.");
 		}
 	};
-		xhr.send(JSON.stringify(formData));
+	xhr.send(JSON.stringify(formData));
 
 });
