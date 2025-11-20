@@ -28,18 +28,19 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
 		age,
 		password
 	}
+	alert("Form Submitted successfully!");
 	console.log(formData);
 	const xhr = new XMLHttpRequest();
 	xhr.open('GET', 'submit.json', true);
 
 	xhr.setRequestHeader('Content-type','application/json;charset=UTF-8');
-	xhr.onreadystatechange = function () {
+	xhr.onreadystatechange = function() {
 		if (xhr.readyState === 4 && xhr.status === 200) {
 			alert ('Form Submitted successfully!');
 			const response = JSON.parse(xhr.responseText);
 			console.log(response);
 			document.getElementById('myForm').innerHTML = '';
-			document.getElementById('message').textContent = response.message;
+			document.getElementById('message').innerText = response.message;
 		} else if (xhr.readyState === 4) {
 			alert("Error Submitting form.");
 		}
