@@ -74,7 +74,7 @@ table tbody tr:nth-child(even) {
 }
 
 table tbody tr:hover {
-    background-color: #103653;
+    background-color: #2f78b0;
     transition: 0.2s;
 }
 
@@ -99,14 +99,14 @@ table tbody tr:hover {
 }
 
 .form-row input[type='submit'] {
-    background-color: rgb(16, 155, 37);
+    background-color: #2f78b0;
     color: white;
     padding: 10px;
 }
 
 .form-row input:not([type='submit']), .form-row select, .form-row textarea {
     padding: 5px 10px;
-    background-color: rgb(91, 159, 219);
+    background-color: #e76363;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
