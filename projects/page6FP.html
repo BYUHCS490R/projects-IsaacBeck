@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="finalProject.css" media="screen">
+</head>
+<body>
+    <header>
+        <h1>Final Project</h1>
+    </header>
+     <nav>
+        <a href="finalProject.html">Home</a>
+        <a href="page1FP.html">Hot Pot (China)</a>
+        <a href="page2FP.html">Sushi (Japan)</a>
+        <a href="page3FP.html">Bibimbap (South Korea)</a>
+        <a href="page4FP.html">Pho (Vietnam)</a>
+        <a href="page5FP.html">Chicken Tikka Masala (India)</a>
+        <a href="page6FP.html" class="active">Food Order Form</a>
+    </nav>
+    <div class="main-row">
+        <main>
+            <h1>Hot Pot (China)</h1>
+            <p>_</p>
+            <h2>Food Order Form</h2>
+            <div id="message"></div>
+
+            <form id="myForm">
+
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="123-456-7890">
+                </div>
+
+                <div class="form-row">
+                    <label for="food">Food Item:</label>
+                    <select id="food">
+                        <option value="">-- Select a Food --</option>
+                        <option value="Hot Pot">Hot Pot</option>
+                        <option value="Sushi">Sushi</option>
+                        <option value="Bibimbap">Bibimbap</option>
+                        <option value="Pho">Pho</option>
+                        <option value="Chicken Tikka Masala">Chicken Tikka Masala</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" max="20">
+                </div>
+
+                <div class="form-row">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address">
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Submit Order">
+                </div>
+
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Isaac Beck</p>
+    </footer>
+    <script src="formFP.js"></script>
+</body>
+</html>
