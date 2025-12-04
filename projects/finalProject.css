@@ -2,20 +2,25 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FAFAFA;
+    color: #333333;
 }
 
 header {
-    background-color: blue;
+    background-color: #B22222;
+    color: white;
 }
 
 footer {
-    background-color: red;
+    background-color: #B22222;
+    color: white;
 }
 
 nav {
     display: flex;
     width: 100%;
     gap: 5px;
+    background-color: #FAFAFA;
 }
 
 nav a {
@@ -28,53 +33,63 @@ nav a {
     margin: 0;
     text-align: center;
     justify-content: space-evenly;
+    color: #333333;
+    border: 1px solid #D4AF37;
 }
 
 nav a.active {
-    background: purple;
+    background: #B22222;
     color: white;
-    border: 2px solid black;
+    border: 2px solid #333333;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #D4AF37;
 }
 
 main {
     padding: 20px;
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
+    background-color: #F4E4C1;
+    border-radius: 10px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 25px;
+    border: 1px solid #333333;
 }
 
-table td, table th {
+table td {
     border: 1px solid black;
     padding: 10px;
     text-align: left;
     font-size: 16px;
+    border-collapse: collapse;
 }
 
 table th {
-    background-color: rgb(16, 155, 37);
-    color: rgb(67, 42, 42);
+    background-color: #D4AF37;
+    border: 1px solid #333333;
+    color: #333333;
     font-weight: bold;
-}
-
-table tbody tr:nth-child(odd) {
-    background-color: #e76363;
+    padding: 10px;
+    text-align: left;
 }
 
 table tbody tr:nth-child(even) {
-    background-color: #789e20;
+    background-color: #D4AF37;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #D4AF37;
 }
 
 table tbody tr:hover {
-    background-color: #2f78b0;
+    background-color: #B22222;
     transition: 0.2s;
 }
 
@@ -104,21 +119,39 @@ table tbody tr:hover {
 }
 
 .form-row input[type='submit'] {
-    background-color: #2f78b0;
+    background-color: #B22222;
     color: white;
     padding: 10px;
 }
 
+.form-row input[type='submit']:hover {
+    background-color: #D4AF37;
+    color: #333333;
+}
+
 .form-row input:not([type='submit']), .form-row select, .form-row textarea {
     padding: 5px 10px;
-    background-color: #e76363;
+    background-color: #FAFAFA;
+    border: 1px solid #D4AF37;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
 }
 
 iframe {
+    width: 100%;
+    border-radius: 8px;
     border: 0;
+    display: block;
+    margin: auto;
+}
+
+.card img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 @media ONLY screen AND (max-width: 480px) {
@@ -148,11 +181,24 @@ iframe {
 
     .card {
         width: 100%;
+        background-color: #F4E4C1;
+        border: 1px solid #D4AF37;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        overflow-x: auto;
     }
 
     .card img {
+        max-width: 100%;
         width: 100%;
         height: auto;
         display: block;
+        margin: 0 auto;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        overflow-x: auto;
     }
 }
