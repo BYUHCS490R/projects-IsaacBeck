@@ -112,6 +112,10 @@ table tbody tr:hover {
     font-weight: 900;
 }
 
+iframe {
+    border: 0;
+}
+
 @media ONLY screen AND (max-width: 480px) {
     nav {
         flex-direction: column;
@@ -135,5 +139,15 @@ table tbody tr:hover {
 
     input[type="submit"] {
         width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
